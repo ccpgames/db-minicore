@@ -1,0 +1,14 @@
+
+IF OBJECT_ID('zsystem.SQL') IS NOT NULL
+  DROP PROCEDURE zsystem.SQL
+GO
+CREATE PROCEDURE zsystem.SQL
+  @sql  nvarchar(max)
+AS
+  SET NOCOUNT ON
+  SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+
+  EXEC sp_executesql @sql
+GO
+GRANT EXEC ON zsystem.SQL TO zzp_server
+GO

@@ -1,7 +1,8 @@
 db-minicore
 ===========
 
-DB Mini Core is a set of general database object for MS SQL.
+Mini Core DB is a collection of general database objects that the DB Captain feels will greatly benefit all serious SQL Server databases.
+
 
 
 Mini Core Versions
